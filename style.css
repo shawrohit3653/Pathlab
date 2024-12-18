@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400&display=swap');
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    background-color: #f1f1f1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 1.5rem;
+    line-height: 24px;
+}
+p{
+    font-size: 1rem;
+    line-height: 24px;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.header-nav{
+    list-style: none;
+    background-color: #fecc4e;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.header-nav ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 0.89rem;
+}
+.header-nav ul a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.secondary-nav {
+    display: flex;
+    background-color: white;
+    padding: 10px; 
+    align-items: center; 
+    border: none;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.secondary-nav .logo {
+    display: flex;
+    justify-content: flex-start; 
+    margin-left: 50px;
+}
+
+.secondary-nav ul {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-left:140px ;
+    font-size: 0.89rem;
+}
+.main-img .fever-Img img{
+    width: 100%;
+    height: 10%;
+}
+.loction{
+    background-color: #0047af;
+    margin: 0;
+    padding: 20px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.vl {
+    border-left: 2px solid wheat;
+    height: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+.loction img{
+    width: 100px; 
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px; 
+}
+.loction .Nearest:hover{
+    zoom: zoom-out;
+}
+.Nearest img {
+    transition: transform .2s; /* Animation */
+  }
+  
+  .Nearest:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  /* General Styling for Special Programs */
+.special-programs {
+    background-color: #fff;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+    margin-bottom: -80px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-8rem);
+
+}
+
+.special-programs-heading {
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Add space between heading and images */
+}
+
+/* Flexbox for Images */
+.special-programs-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 200px;
+
+    height: 200px;
+}
+
+.vl {
+    border-left: 2px solid wheat;
+    height: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+.Explore {
+    background-color: #fff;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 90px;
+    height: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.city-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+.city-list span {
+    white-space: nowrap;
+}
+.city-list span::after {
+    content: " |";
+    margin-left: 5px;
+    color: #666;
+}
+.city-list span:last-child::after {
+    content: "";
+}
+.city-list span:hover{
+    color: #0047af;
+    text-decoration: underline;
+}
+
+/* Footer Section */
+footer {
+    background-color: #ffcc33;
+    color: black;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.footer-column ul li:hover {
+    text-decoration: underline;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    background-color: #003399;
+    color: white;
+    padding: 10px;
+    /* text-align: center; */
+}
+
+.footer-bottom p {
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.footer-links li {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.footer-links li:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.social-icons span {
+    margin-bottom: 50px;
+}
+.social-icons a {
+    background-color: #fecc4e;
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-block; /* To ensure the background covers the icon */
+}
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+    .special-programs-images {
+        gap: 20px;
+    }
+
+    .secondary-nav ul {
+        margin-left: 0;
+        gap: 10px;
+    }
+
+    .secondary-nav .logo {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-nav ul,
+    .secondary-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .secondary-nav {
+        justify-content: center;
+    }
+
+    .loction {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vl {
+        display: none;
+    }
+
+    .special-programs-images {
+        background-color: #fff;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 90px;
+        height: 500px;
+        padding: 10px;
+        flex-wrap:wrap ;
+        flex-direction: row;
+        border-radius: 10px;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .header-nav {
+        padding: 5px;
+    }
+
+    .header-nav ul {
+        gap: 5px;
+    }
+
+    .special-programs,
+    .Explore {
+        margin: 20px 10px;
+        padding: 10px;
+    }
+
+    .footer-container {
+        padding: 10px;
+    }
+}
